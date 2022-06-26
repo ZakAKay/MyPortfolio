@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./about.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>About</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-content">
+            <div class="logo">
+                <i class='bx bxs-bolt'></i>
+                <div class="logo-name">Portfolio</div>
+            </div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                    <i class='bx bx-search' ></i>
+                    <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+           <li>
+                <a href="./index.html">
+                    <i class='bx bx-run'></i>
+                    <span class="links_name">LandingPage</span>
+                </a>
+                <span class="tooltip">LandingPage</span>
+            </li>
+            <li>
+                <a href="./about.html">
+                    <i class='bx bx-smile'></i>
+                    <span class="links_name">About</span>
+                </a>
+                <span class="tooltip">About</span>
+            </li>
+            <li>
+                <a href="./resume.html">
+                    <i class='bx bx-message-alt-detail'></i>
+                    <span class="links_name">Resume</span>
+                </a>
+                <span class="tooltip">Resume</span>
+            </li>
+            <li>
+                <a href="./contact.html">
+                    <i class='bx bxs-contact'></i>
+                    <span class="links_name">Contact</span>
+                </a>
+                <span class="tooltip">Contact</span>
+            </li>
+            <li>
+                <a href="./gallery.html">
+                    <i class='bx bx-grid-alt' ></i>
+                    <span class="links_name">Gallery</span>
+                </a>
+                <span class="tooltip">Gallery</span>
+            </li>
+        </ul>
+        <div class="profile-content">
+            <div class="profile">
+                   <div class="profile-details">
+                   <img src="./myProfilePic.jpg" alt="">
+                    <div class="name-job">
+                <div class="name">Zachary Kay</div>
+                <div class="job">Web Developer</div>
+                    </div>
+                   </div>       
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".bx-search");
+
+        btn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+        searchBtn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+    </script>
+     <div class="top">
+    <h1 class="title">Zachary Kay</h1>
+<div class="resume"> 
+    <h3>Call Center Manager</h3>
+    <h4>Optimum Solar - Austin, TX 
+        April 2021 to June 2022</h4>
+   <!-- update resume -->
+   <ul>
+    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis doloribus quaerat, quis amet exercitationem laudantium!</li>
+
+    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit eveniet sit maiores voluptatum aliquid ipsam.</li>
+
+    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, numquam accusamus modi nemo voluptatem molestiae!</li>
+   </ul>
+   
+    <h3>Sales Chat Representative</h3>
+    <h4>ETECH - Lufkin, TX
+        February 2020 to March 2021</h4>
+ 
+    <ul>
+    <li>Communicate effectively and professionally with all chats
+    Maintain typing speed of 40 words per minute.</li>
+
+    <li> Demonstrate understand of promotions and how to effectively pitch said promotions to customers</li>
+
+    <li>Provide expert information and knowledge to customers in regards to their account</li> 
+    </ul>
+
+   <h3>Route Sales Representative</h3>
+   <h4>SCHWAN HOME FOOD SERVICE - Spokane, WA
+    July 2018 to September 2019</h4>
+
+    <ul>
+    <li> Maintain strict safety regulations with monthly ride alongs</li>
+
+   <li> Safely drive through Spokane and arrive at customers home in a timely manner</li>
+
+   <li> Ability to develop a relationship with potential customers</li>
+
+   <li>Demonstrate knowledge of products and ability to sell said products</li> 
+
+   <li>Work Independently to grow route with minimum oversight
+     Honor code of conduct and presentability</li>
+    </ul>
+
+    <h3>Customer Care Associate</h3>
+    <h4>LIBERTY MUTUAL INSURANCE - Liberty Lake, WA
+    February 2017 to February 2018</h4>
+
+    <ul>
+    <li>Provides efficient customer service by promptly and courteously responding to all inbound inquiries regarding Personal Insurance claims.</li>
+    
+    <li>Performs initial capture of new Auto claims; Processes all "First Notice of Loss" and performs enhanced capture steps as needed.</li>
+
+    <li>Capture new claims and service existing claims through effective collaboration with internal and external partners.  
+    </li> 
+
+    <li>Set expectations with customers on when updates on their claim status will be provided. 
+    </li>
+    
+    <li>Provides contacts for temporary resources such as rental cars locations and or tow trucks to assist callers.
+    </li>
+
+    <li>Demonstrates understanding of policies and provides guidance and assistance to callers based on their needs; and may make limited recommendations on enhancements as needed
+    Processes caller transactions accurately and within established Contact Center time standards. 
+    
+    Manages and utilizes time effectively to ensure the required service levels for call capture and service handle time as well as quality and customer satisfaction standards are met
+    </ul>
+
+    <h3>Patient Equipment Transporter</h3>
+    <h4>KOOTENAI HEALTH, COEUR D' ALENE, IDAHO
+    October 2012 to February 2017</h4>
+    <ul>
+
+    <li>Ability to move throughout facility, transporting patients and equipment
+    </li>
+
+    <li>Frequent moving, transferring and positioning of patients with and/or without assistance</li>
+
+    <li>Communicate with patients, physicians, families and co-workers in person and on telephone
+    </li>
+
+    <li>Read charts, dials, equipment settings, literature and other printed and handwritten materials
+    </li>
+
+    <li>Work with equipment and manipulate equipment settings, computer keyboard, etc.</li>
+
+    <li>Thorough knowledge of lift safety equipment and patient transfer techniques
+    </li>
+
+    <li>On feet a minimum of 8-12 hours, depending on length of shift
+    </li>
+    </ul>
+
+</body>
+</html>

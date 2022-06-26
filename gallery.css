@@ -1,0 +1,104 @@
+/* body{
+    width: 100vw;
+    height: 100vh;
+} */
+
+.container {
+  display: grid;
+  margin: 0 auto;
+  grid-template-areas:
+    "title"
+    "navbar"
+    "projects";
+}
+body{
+  color: rgb(1, 1, 61);
+}
+.title {
+  grid-area: title;
+  text-align: center;color: white;
+  background-color: rgb(7, 7, 108);
+  padding: 3%;
+  font-size: 45px;
+}
+.navbar {
+  grid-area: navbar;
+  text-align: center;
+  /* padding: 15px 40px; */
+  margin-left: 25%;
+  margin-right: 25%;
+  color: black;
+}
+:any-link{
+    color:black;
+    font-size: 20px;
+  
+}
+.projects {
+  grid-area: projects;
+  display: flex;
+  flex-direction: column;
+  margin: 0% auto;
+  filter: grayscale();
+}
+/* .project-one{
+    max-width: 50%;
+    max-height: 50%; */
+
+.projects img {
+  max-width: 50%;
+}
+.projects div {
+    /* max-width: 50%; */
+  text-align: center;
+}
+/* .project-three{
+    border:15px solid black
+} */
+
+@media (min-width: 576px) {
+  .container {
+    display: grid;
+    margin: 0 auto;
+    grid-template-areas:
+      "title"
+      "navbar"
+      "projects";
+  }
+  .projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media(min-width: 992px) {
+
+    .container {  
+        display: grid;
+        gap: 3%;
+        grid-template-areas:
+          "title title"
+          "navbar navbar"
+          "projects projects";
+      }
+      body{
+        padding-left: 0%;
+        padding-right: 0%;
+
+      }
+      :any-link{
+        color:black;
+        font-size: 35px;}
+
+        .title{
+         font-size: 60px;
+        }
+        .navbar :hover{
+          /* background-color: (7, 7, 108); */
+          background-color: rgb(7, 7, 108);
+          color: white;
+          transition: 0.5s;
+          letter-spacing: 4px;
+          text-transform: uppercase;
+}
+}

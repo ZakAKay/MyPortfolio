@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./about.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>About</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-content">
+            <div class="logo">
+                <i class='bx bxs-bolt'></i>
+                <div class="logo-name">Portfolio</div>
+            </div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                    <i class='bx bx-search' ></i>
+                    <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+           <li>
+                <a href="./index.html">
+                    <i class='bx bx-run'></i>
+                    <span class="links_name">LandingPage</span>
+                </a>
+                <span class="tooltip">LandingPage</span>
+            </li>
+            <li>
+                <a href="./about.html">
+                    <i class='bx bx-smile'></i>
+                    <span class="links_name">About</span>
+                </a>
+                <span class="tooltip">About</span>
+            </li>
+            <li>
+                <a href="./resume.html">
+                    <i class='bx bx-message-alt-detail'></i>
+                    <span class="links_name">Resume</span>
+                </a>
+                <span class="tooltip">Resume</span>
+            </li>
+            <li>
+                <a href="./contact.html">
+                    <i class='bx bxs-contact'></i>
+                    <span class="links_name">Contact</span>
+                </a>
+                <span class="tooltip">Contact</span>
+            </li>
+            <li>
+                <a href="./gallery.html">
+                    <i class='bx bx-grid-alt' ></i>
+                    <span class="links_name">Gallery</span>
+                </a>
+                <span class="tooltip">Gallery</span>
+            </li>
+        </ul>
+        <div class="profile-content">
+            <div class="profile">
+                   <div class="profile-details">
+                   <img src="./myProfilePic.jpg" alt="">
+                    <div class="name-job">
+                <div class="name">Zachary Kay</div>
+                <div class="job">Web Developer</div>
+                    </div>
+                   </div>       
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".bx-search");
+
+        btn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+        searchBtn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+    </script>
+<h2>Hobbies</h2>
+<div class="info">
+  <h3>Football</h3>
+  <p>
+    Ive always enjoyed watching football due to its team first oriantation
+    coupled with all the different strategies that can be used to defeat the
+    opposing teams. Plus its really fun talking smack to another teams
+    fanbase
+  </p>
+  <h3>Flyfishing</h3>
+  <p>
+    Nothing in this world sooths my soul quite like flyfishing. To quote the
+    great Ron Swanson, "fishing is like yogo, except I still get to kill
+    something".
+  </p>
+  <h3>Reading</h3>
+  <p>
+    Im a huge science fiction fan, and nothing scratches that itch quite
+    like reading. Movies and TV shows are nice, but its nothing compared to
+    to the imagination when reading a good book.
+  </p>
+</div>
+</div>
+</body>
+</html>
